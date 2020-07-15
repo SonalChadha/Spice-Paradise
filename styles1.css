@@ -22,7 +22,7 @@ li, main, nav, nav a, ol, p, section, span, ul {
 
 body {
 	background: white;
-	width: 90%;	
+	width: 100%;	
 	min-width: 375px;
     max-width: 1024px;   
 	min-height: 100%;
