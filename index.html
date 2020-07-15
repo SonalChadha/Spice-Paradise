@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Spice Paradise</title>
+	<link href="styles1.css" rel="stylesheet"/>
+	<link href="home.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<div id="headerPics">
+			<a class="logo" href="index.html">
+				<img src="logo.png" alt="logo"/>
+			</a>
+			<img src="spices.png" alt="" id="spoons"/>
+		</div>
+		<nav>
+			<a id="navicon" href="#">
+				<img src="navicon.png" alt=""/>
+			</a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="veg.html">Veg Platter</a>
+				</li>
+				<li>
+					<a href="nonveg.html">Non-Veg Platter</a>
+				</li>
+				<li>
+					<a href="desserts.html">Desserts</a>
+				</li>
+				<li>
+					<a href="drinks.html">Beverages</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="homePagepics/1.jpg" style="width:100%; height:700px;">
+		  <h1>Authentic Indian Street Food</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="homePagepics/2.jpg" style="width:100%; height:700px;">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="homePagepics/3.jpg" style="width:100%; height:700px;">
+		</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+	</script>
+
+	<div class="galleryContainer">
+		<h2>Trending Recipes</h2>
+		<a target="_blank" href="https://www.sanjeevkapoor.com/All-recipesearch.aspx?Search=Healthy%20Recipes&course=&cusine=&recipetitle=">
+			<div class="gallery">
+				<img src="homePagepics/trendingGallery/tgallery1.png" alt="">
+				<div class="desc">Healthy Recipes</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/All-recipesearch.aspx?Search=party&course=&cusine=&recipetitle=">
+			<div class="gallery">
+				<img src="homePagepics/trendingGallery/tgallery2.png" alt="">
+				<div class="desc">Party Cooking</div>
+			</div>
+		</a>
+
+		<a target="_blank" href="https://www.sanjeevkapoor.com/All-recipesearch.aspx?Search=Indian%20Bread&course=&cusine=&recipetitle=">
+			<div class="gallery">
+				<img src="homePagepics/trendingGallery/tgallery3.png" alt="">
+				<div class="desc">Indian Bread</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/All-recipesearch.aspx?Search=Chocolate&course=&cusine=&recipetitle=">
+			<div class="gallery">
+				<img src="homePagepics/trendingGallery/tgallery4.png" alt="">
+				<div class="desc">Sinful Indulgence</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="galleryContainer">
+		<h2>Summer Recipes</h2>
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Chocolate-Frappe---SK-Khazana.html">
+			<div class="gallery">
+					<img src="homePagepics/summerGallery/sgallery1.jpg" alt="">
+					<div class="desc">Chocolate Frappe</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Paneer-Bhurji-Roll-SK-Khazana.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery2.jpg" alt="">
+				<div class="desc">Paneer Bhurji Roll</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Mango-Milkshake-SK-Khazana.html">
+			<div class="gallery">
+					<img src="homePagepics/summerGallery/sgallery3.jpg" alt="">
+					<div class="desc">Mango Milkshake</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Cucumber,-Mint-and-Kokum-Popsicles.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery4.jpg" alt="">
+				<div class="desc">Cucumber, Mint, and Kokum Popsicles</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Watermelon-Mojito-SK-Khazana.html">
+			<div class="gallery">
+					<img src="homePagepics/summerGallery/sgallery5.jpg" alt="">
+					<div class="desc">Watermelon Mojito</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Masala-Chaas.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery6.jpg" alt="">
+				<div class="desc">Masala Chaas</div>
+		</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Chocolate-Brownie-Ice-Cream.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery7.jpg" alt="">
+				<div class="desc">Chocolate Brownie Ice Cream</div>
+			</div>
+		</a>
+
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Poha-Papad-SK-Khazana.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery8.jpg" alt="">
+				<div class="desc">Poha Papad</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Aloo-Tikki-Burger---SK-Khazana.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery9.jpg" alt="">
+				<div class="desc">Aloo Tikki Burger</div>
+			</div>
+		</a>
+		
+		<a target="_blank" href="https://www.sanjeevkapoor.com/Recipe/Kokum-Sharbat---cook-smart-Sanjeev-Kapoor-Kitchen-FoodFood.html">
+			<div class="gallery">
+				<img src="homePagepics/summerGallery/sgallery10.jpg" alt="">
+				<div class="desc">Kokum Sherbet</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<h2>Read</h2>
+			<div class="contentitem">
+				<a href="https://www.thespruceeats.com/discovering-indian-cuisine-1957870">
+					<img src="homePagepics/columnpics/columnleftpic1.png" alt=""></a>
+				<a href="https://www.thespruceeats.com/discovering-indian-cuisine-1957870">
+					<p style="padding-top: 5px;">A cuisine-focused look at the regions of India</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://www.bbc.com/news/world-asia-india-36476536">
+					<img src="homePagepics/columnpics/columnleftpic2.png" alt=""></a>
+				<a href="https://www.bbc.com/news/world-asia-india-36476536">
+					<p style="padding-top: 70px;">Why this Indian state screams for ice-cream</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://www.bbc.com/news/world-asia-india-36659670">
+					<img src="homePagepics/columnpics/columnleftpic3.png" alt=""></a>
+				<a href="https://www.bbc.com/news/world-asia-india-36659670">
+					<p>Amma canteen: Where an Indian meal costs only seven cents</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="http://www.bbc.com/travel/story/20180401-vada-pav-the-indian-burger-mcdonalds-cant-master">
+					<img src="homePagepics/columnpics/columnleftpic4.png" alt=""></a>
+				<a href="http://www.bbc.com/travel/story/20180401-vada-pav-the-indian-burger-mcdonalds-cant-master">
+					<p style="padding-top: 8px;">The 'Indian Burger' vs. McDonald's</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="http://www.bbc.com/travel/story/20200602-pani-puri-indias-favourite-street-food-at-home">
+					<img src="homePagepics/columnpics/columnleftpic5.png" alt=""></a>
+				<a href="http://www.bbc.com/travel/story/20200602-pani-puri-indias-favourite-street-food-at-home">
+					<p>India's most missed street snack during lockdown?</p></a>
+			</div>
+		</div>
+		<div class="column">
+			<h2>Eat</h2>
+			<div class="contentitem">
+				<a href="https://hostthetoast.com/homemade-garlic-naan/">
+					<img src="homePagepics/columnpics/columnmidpic1.jpg" alt=""></a>
+				<a href="https://hostthetoast.com/homemade-garlic-naan/">
+					<p style="padding-top: 50px;">Homemade Garlic Naan</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://food.ndtv.com/recipe-crunchy-vegetable-dal-sattu-croquettes-953986">
+					<img src="homePagepics/columnpics/columnmidpic2.jpg" alt=""></a>
+				<a href="https://food.ndtv.com/recipe-crunchy-vegetable-dal-sattu-croquettes-953986">
+					<p style="padding-top: 10px;">Crunchy Dal Vegetable Sattu Croquettes</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://food.ndtv.com/recipe-rose-sherbat-954268">
+					<img src="homePagepics/columnpics/columnmidpic3.jpg" style="height:130px;" alt=""></a>
+				<a href="https://food.ndtv.com/recipe-rose-sherbat-954268">
+					<p style="padding-top: 50px;">Rose Sherbet</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://hostthetoast.com/grilled-tandoori-chicken-patties-with-jalapeno-mint-yogurt-sauce/">
+					<img src="homePagepics/columnpics/columnmidpic4.jpg" alt=""></a>
+				<a href="https://hostthetoast.com/grilled-tandoori-chicken-patties-with-jalapeno-mint-yogurt-sauce/">
+					<p style="padding-top: 40px;">Tandoori Chicken Patty Sandwiches</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="https://food.ndtv.com/recipe-anjeer-kaju-roll-952786">
+					<img src="homePagepics/columnpics/columnmidpic5.jpg" style="height:100px;" alt=""></a>
+				<a href="https://food.ndtv.com/recipe-anjeer-kaju-roll-952786">
+					<p style="padding-top:20px;">Anjeer Kaju Roll</p></a>
+			</div>
+		</div>
+		<div class="column">
+			<h2>Nearby Eateries</h2>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic1.jpg" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 20px;">Kwality Ice Cream and Grill</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic2.jpg" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 30px;">Aroma</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#" alt="">
+					<img src="homePagepics/columnpics/columnrightpic3.jpg" alt=""></a></a>
+				<a href="#">
+					<p style="padding-top: 15px;">Curry Point</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic4.jpg" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 25px;">Flavors</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic5.jpg" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 20px;">Bawarchi Biryanis</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic6.jpg" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 35px;">Pandiya's</p></a>
+			</div>
+			<div class="contentitem">
+				<a href="#">
+					<img src="homePagepics/columnpics/columnrightpic7.jpg" style="height:90px;" alt=""></a>
+				<a href="#">
+					<p style="padding-top: 30px;">Spice Shuttle</p></a>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p>Created by Sonal Chadha <a href="mailto:schadha@nwacc.edu">schadha@nwacc.edu</a>
+		for Web Design class from <a href="https://www.nwacc.edu/">NWACC</a>
+		</p>
+		<a href="#"><img class="icon" src="facebookicon.png" alt=""></a>
+		<a href="#"><img class="icon" src="twittericon.png" alt=""></a>
+		<a href="#"><img class="icon" src="instaicon.png" alt=""></a>
+		<a href="#"><img class="icon" src="linkedinicon.png" alt=""></a>
+		<a href="#"><img class="icon" src="pinteresticon.png" alt=""></a>
+		
+      <nav class="verticalNavigation">
+         <ul>
+            <li><a href="#">top 21 recipes</a></li>
+            <li><a href="#">easy cooking</a></li>
+            <li><a href="#">top 25 recipe videos</a></li>
+            <li><a href="#">tip videos</a></li>
+            <li><a href="#">no onion no garlic recipes</a></li>
+			<li><a href="map.html">regional specialties</a></li>
+			<li><a href="diet.html">Indian diet plan</a></li>
+         </ul>
+      </nav>
+      <nav class="verticalNavigation">
+         <ul>
+            <li><a href="#">job opening</a></li>
+            <li><a href="#">copyright policy</a></li>
+			<li><a href="#">privacy policy</a></li>
+			<li><a href="#">advertise with us</a></li>
+            <li><a href="#">contact us</a></li>
+         </ul>
+      </nav>
+	</footer>
+</body>
+</html>

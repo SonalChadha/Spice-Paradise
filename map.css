@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+img#mobilemap {
+	display: none;
+}
+
+img#desktopmap {
+	float: left;
+}
+
+main p {
+	float: left;
+	width: 40%;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: 8px;
+	line-height: 1.5em;
+	font-size: 1.3em;
+	border: 2px solid brown;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+main {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+map#mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 640px) {
+	img#desktopmap {
+		display: none;
+	}
+	
+	img#mobilemap {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	main p {
+		width: 95%;
+		font-size: 1.2em;
+		margin: 10px;
+		padding: 6px;
+	}
+	
+	map#desktop {
+		display: none;
+	}
+	map#mobile {
+		display: block;
+	}
+}

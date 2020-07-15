@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+div#main {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+/* Left Navigation Styles */
+section#left {
+	position: fixed;
+	top: 20%;
+}
+	
+section#left nav.vertical {
+	border-radius: 25px;
+	border: 1px solid rgb(20,167,170);
+	margin: auto;
+	margin-left: 10px;
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+section#left nav.vertical ul li {
+   margin: 5px;
+}
+
+section#left nav.vertical a {
+   color: blue;
+}
+
+section#left nav.vertical a:hover {
+   text-decoration: underline;
+}
+
+/* Right Article Styles */
+article {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-bottom: 20px;
+    padding-bottom: 10px;
+	background: radial-gradient(white 30%, #ff334b);
+	border-radius: 50px 50px;
+	border: 1px solid rgb(151,151,151);
+	box-shadow: 10px 10px 20px rgb(51,51,51);
+	flex-direction: column;
+	width: 80%;
+}
+
+article figure {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+article figure img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+article section.ingredients {
+	float: left;
+	width: 50%;
+	padding-left: 6%;
+	padding-top: 2px;
+	line-height: 1.4em;
+}
+
+article section.ingredients li {
+	list-style: circle;
+}
+
+article section.ingredients h2 {
+	margin-bottom: 8px;
+}
+
+article section.steps {
+	clear: both;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+	line-height: 1.5em;
+	border-radius: 5%;
+}
+
+article section.steps li {
+	list-style: decimal;
+	margin-top: 10px;
+}
+
+article section::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+article h1 {
+	padding-left: 40px;
+	color: #0a6e37;
+	font-size: 3em;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+h2 {
+	font-weight: normal;
+	text-decoration: underline;
+	font-size: 1.6em;
+}
+
+/*Mobile styles*/
+@media only screen and (max-width: 640px) {
+	
+	section#left {
+		margin: 5px auto;
+		position: relative;
+		width: 50%;
+	}
+	
+	section#left nav.vertical {
+		padding: 5px; 
+		text-align: center;
+	}
+	
+	article {
+		width: 100%;
+		padding: 10px;
+		margin: 10px;
+		margin-top: 5px;
+	}
+	
+	article h1 {
+		font-size: 2.3em;
+		padding-left: 15px;
+	}
+}
+
+
